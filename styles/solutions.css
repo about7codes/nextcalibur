@@ -1,0 +1,469 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: myFont, sans-serif;
+}
+
+@font-face {
+    font-family: 'myFont';
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.active{
+    color: #57A6DC;
+}
+
+.btn-c{
+    background-color: #858585;
+    color: #fff;
+    border: 2px solid #fff;
+    font-family: myFont, sans-serif;
+    border-radius: 3px;
+    padding: 5px 45px;
+    transition: .3s ease-in-out;
+}
+
+.btn-c:hover{
+    background-color: #fff;
+    color: #858585; 
+}
+
+
+/* Nav & intro styles below  ***********************/
+
+header{
+    background-color: #0D283A;
+    width: 100%;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.navlink{
+    display: flex;
+    list-style: none;
+    color: #fff;
+}
+
+/* Vid...************************************** */
+
+nav label {
+    cursor: pointer;
+    color: #fff;
+    margin: 0 20px 0 0;
+    font-size: 26px;
+    line-height: 25px;
+    display: none;
+}
+
+#toggle{
+    display: none;
+}
+
+  /* Vid...************************************** */
+
+.navlink li a{
+    white-space: nowrap;
+    padding-right: 15px; /* Previously 30px */
+    
+}
+
+nav .logo{
+    height: 50px;
+    padding-left: 15px;
+}
+
+.intro{
+    background-color: #0A202F;
+    position: relative;
+    height: 360px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.intro img{
+    /* text-align: center; */
+    display: block;
+    height: 360px;
+    min-width: 100%;
+    /* z-index: -2; */
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.intro h1{
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Tabs styles below  ***********************/
+
+img{
+    height: 360px;
+}
+
+.tabs-section{
+    width: 100%;
+    line-height: 1.4;
+}
+
+.tabs-top{
+    background-color: #B8E3FC;
+    display: flex;
+    justify-content: center;
+}
+
+.tabs{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    cursor: pointer;
+}
+.tabs li:nth-child(2){
+    border-left: 1px solid #C2D3E1 ;
+    border-right: 1px solid #C2D3E1 ;
+}
+
+.tabs li{
+    text-align: center;
+    padding: 50px;
+    width: 300px;
+}
+
+.tabs li img{
+    height: 85px;
+}
+
+.tab-content{
+    width: 1000px;
+    margin: 0 auto;
+}
+.tab-content p{
+    font-size: 14px;
+}
+
+.tab1{
+    justify-content: space-between;
+}
+.tab1-img{
+    position: relative;
+}
+.tab1-img img{
+    height: 450px;
+    /* position: absolute; */
+    /* top: -25px; */
+}
+
+.tab1-content{
+    width: 500px;    
+}
+
+.tab1, .tab2, .tab3{
+    display: flex;
+}
+
+.tab1-content, .tab2-content, .tab3-content{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.tab2{
+    display: flex;
+    text-align: justify;
+    position: relative;
+}
+
+.tab2-content{
+    width: 600px;    
+}
+
+.tab2-img img{
+    position: absolute;
+    bottom: 0;
+}
+
+.tab2-img, .tab3-img{
+    align-self: center;
+}
+
+.tab3-content{
+    align-self: center;
+    padding-left: 10px;
+}
+
+.tab3-img img{
+    height: 200px;
+    margin-left: 50px;
+}
+
+/* Tab config ...JS  *************************/
+
+[data-tab-content]{
+    display: none;
+}
+
+.select[data-tab-content]{
+    display: flex;
+}
+
+.tab.select{
+    border-top: 10px solid #54575A;
+    border-bottom: 1px solid #B8E3FC;
+    background-color: #fff;
+}
+
+/* Tab config ...JS  *************************/
+
+/* Contact Section styles below  */
+
+.contact-section{
+    color: #fff;
+    font-family: myFont, sans-serif;
+    background-color: #323435;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.contact-container{
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.contact-a .logo{
+    height: 50px;
+}
+
+.contact-a{
+    /* width: 400px; */
+    text-align: right;
+    align-self: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    font-family: myFont, sans-serif;
+    padding: 6px ;
+    margin-top: 10px;
+    border-radius: 2px;
+    background-color: #858585;
+    border: 0;
+    color: #fff;
+}
+
+.contact-form textarea{
+    resize: none;
+    margin-bottom: 20px !important;
+}
+
+.contact-c{
+    width: 270px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.contact-info a{
+    color: #fff;
+}
+
+.contact-info p, .contact-location p{
+    margin: 0;
+}
+
+.contact-info{
+    margin-bottom: 16px;
+}
+
+/* Footer Section styles below  */
+
+footer{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: myFont, sans-serif;
+    /* font-size: 12px; */
+    background-color: #222A2E;
+    color: #fff;
+}
+
+footer .footer-container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-terms{
+    display: flex;
+}
+.footer-terms p a{
+    margin-right: 40px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1000px) {
+    /* Nav & Header Section styles below  */
+
+    header nav{
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+
+    nav label{
+        display: block;
+        text-align: right;
+    }
+
+    nav .logo{
+        height: 25px;
+        position: absolute;
+    }
+
+    nav .navlink{
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+        height: 100vh;
+    }
+
+    .navlink li{
+        padding: 10px 15px;
+    }
+
+    #toggle:checked + .navlink {
+        display: block;
+        transition: all .2s ease-in-out ;
+    }
+
+    .intro h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .intro, .intro img{
+        height: 160px;
+    }
+
+    /* Tabs styles below  ***********************/
+    .tabs-container p{
+        font-size: 14px;
+    }
+    
+    .tabs{
+        padding: 0;
+    }
+    .tabs, .tabs li, .tab-content, .tab1-content, .tab2-content{
+        width: 100%;
+    }
+    .tabs li{
+        padding: 5px;
+        align-self: center;
+    }
+    .tabs li p{
+        display: none;
+    }
+    .tabs li img{
+        height: 40px;
+    }
+    .tab{
+        border-top: 5px solid transparent;
+    }
+    .tab.select{
+        border-top: 5px solid #54575A;
+    }
+    .select[data-tab-content]{
+        display: block;
+    }
+    .tab1-content, .tab2-content, .tab3-content{
+        margin: 0 auto;
+        padding: 15px;
+    }
+    .tab1-img, .tab2-img, .tab3-img{
+        text-align: center;
+    }
+
+    .tab1-img img, .tab2-img img{ 
+        margin: 0 auto;
+        position: relative;
+        height: 200px;
+        text-align: center;
+        vertical-align: bottom;
+    }
+
+    .tab3-img img{
+        margin: 0;
+        height: 100px;
+    }
+
+
+    /* Contact Section styles below  */
+    .contact-section{
+        padding-top: 20px;
+    }
+    .contact-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .contact-a{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-a .logo{
+        height: 25px;
+    }
+    .contact-a h1{
+        font-size: 16px;
+    }
+    .contact-b{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact-c{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    /* Footer Section styles below  */
+    footer .footer-container{
+        width: 100%;
+        flex-direction: column;
+        font-size: 10px;
+        padding: 10px;
+    }
+}

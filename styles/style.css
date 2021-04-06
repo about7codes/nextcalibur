@@ -1,0 +1,455 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500&display=swap'); */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'myFont';
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+a{
+    text-decoration: none;
+}
+
+.active{
+    color: #57A6DC !important;
+}
+
+.btn-a{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #57A6DC;
+    font-family: myFont, sans-serif;
+    border-radius: 3px;
+    padding: 5px 25px;
+    transition: .3s ease-in-out;
+}
+
+.btn-a:hover{
+    background-color: #57A6DC;
+    color: #fff;
+}
+
+.btn-b{
+    background-color: #57A6DC;
+    color: #fff;
+    border: 2px solid #fff;
+    font-family: myFont, sans-serif;
+    border-radius: 3px;
+    padding: 5px 25px;
+    transition: .3s ease-in-out;
+}
+
+.btn-b:hover{
+    background-color: #fff;
+    color: #57A6DC;
+}
+
+.btn-c{
+    background-color: #858585;
+    color: #fff;
+    border: 2px solid #fff;
+    font-family: myFont, sans-serif;
+    border-radius: 3px;
+    padding: 5px 45px;
+    transition: .3s ease-in-out;
+}
+
+.btn-c:hover{
+    background-color: #fff;
+    color: #858585; 
+}
+
+/* Nav & intro styles below  */
+
+header{
+    position: relative;
+    /* background-image: url(./images/Navbg-own.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    position: relative;
+    width: 100%;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.navbg{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    /* width: 70%; */
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.navlink{
+    display: flex;
+    list-style: none;
+    color: #fff;
+}
+
+nav .logo{
+    height: 50px;
+    padding-left: 15px;
+}
+
+ /* Vid...************************************** */
+
+nav label {
+    cursor: pointer;
+    color: #fff;
+    margin: 0 20px 0 0;
+    font-size: 26px;
+    line-height: 25px;
+    display: none;
+}
+
+#toggle{
+    display: none;
+}
+
+  /* Vid...************************************** */
+
+.navlink li a{
+    color: #fff;
+    font-family: myFont, sans-serif;
+    /* font-size: 14px; */
+    white-space: nowrap;
+    padding-right: 15px; /* Previously 30px */
+    
+}
+
+
+.intro{
+    /* display: flex; */
+    /* flex-direction: column; */
+    text-align: right;
+    color: #fff;
+    font-family: myFont;
+    /* width: 80%; */
+    width: 900px;
+    margin: 0 auto;
+    /* margin-top: 6rem; */
+}
+.intro h1{
+    font-size: 50px;
+    margin: 0;
+    margin-top: 6rem;
+    font-weight: 600;
+}
+.intro p{
+    font-size: 28px;
+    margin: 0;
+    font-style: italic;
+}
+
+.intro-pic-container{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* position: absolute; */
+}
+
+.intro-pic{
+    /* width: 100%; */
+    height: 450px;
+}
+
+/* About Section styles below  */
+
+.about-section{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.about-container{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+}
+
+.about-img{
+    height: 350px;
+    position: relative;
+    bottom: -70px;
+    left: 0;
+}
+.about-content{
+    padding-right: 20px;
+}
+
+.about-content h1{
+    font-size: 40px;
+    color: #57A6DC;
+    font-family: myFont, sans-serif;
+    margin-bottom: 0;
+}
+
+.about-content p{
+    font-family: myFont, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: justify;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Servies Section styles below  */
+
+.services-section{
+    background-color: #57A6DC;
+    padding-top: 40px;
+}
+
+.services-container{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+}
+
+.services-img{
+    height: 450px;
+    /* width: 100%; */
+    position: absolute;
+    bottom: -30px;
+    /* right: -100px; */
+    left: 350px;
+}
+
+.services-content{
+    margin-right: 250px;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+
+.services-content h1{
+    font-size: 40px;
+    color: #fff;
+    font-family: myFont, sans-serif;
+    margin: 0;
+}
+
+.services-content p{
+    font-family: myFont, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: justify;
+    width: 400px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+
+
+/* Solutions Section styles below  */
+
+.solutions-section{
+    /* padding-top: 40px; */
+    padding-bottom: 40px;
+}
+
+.solutions-container{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+}
+
+.solutions-img{
+    height: 470px;
+    position: absolute;
+    bottom: -70px;
+    left: 20px;
+}
+
+.solutions-content h1{
+    font-size: 40px;
+    color: #57A6DC;
+    font-family: myFont, sans-serif;
+}
+.solutions-content{
+    z-index: 1;
+}
+
+.solutions-content p{
+    font-family: myFont, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: justify;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+/* Careers Section styles below  */
+
+.careers-section{
+    background-color: #57A6DC;
+    padding-top: 40px;
+}
+
+.careers-container{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+}
+.careers-img-container{
+    display: flex;
+    align-self: flex-end;
+}
+
+.careers-img{
+    height: 200px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* right: 0;  */
+}
+.careers-content{
+    margin-bottom: 50px;
+}
+
+.careers-content h1{
+    font-size: 40px;
+    color: #fff;
+    font-family: myFont, sans-serif;
+    margin: 0;
+}
+
+.careers-content p{    
+    font-family: myFont, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: justify;
+    width: 400px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+/* Contact Section styles below  */
+
+.contact-section{
+    color: #fff;
+    font-family: myFont, sans-serif;
+    background-color: #323435;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-container{
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.contact-a .logo{
+    height: 50px;
+}
+
+.contact-a{
+    max-width: 400px;
+    text-align: right;
+    align-self: center;
+}
+
+.contact-b{
+    width: 320px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    font-family: myFont, sans-serif;
+    padding: 6px ;
+    margin-top: 10px;
+    border-radius: 2px;
+    background-color: #858585;
+    border: 0;
+    color: #fff;
+}
+
+.contact-form textarea{
+    resize: none;
+    margin-bottom: 20px !important;
+}
+
+.contact-c{
+    max-width: 400px;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.contact-info a{
+    color: #fff;
+}
+
+.contact-info p, .contact-location p{
+    margin: 0;
+}
+
+.contact-info{
+    margin-bottom: 16px;
+}
+
+/* Footer Section styles below  */
+
+footer{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: myFont, sans-serif;
+    /* font-size: 12px; */
+    background-color: #222A2E;
+    color: #fff;
+}
+
+footer .footer-container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-terms{
+    display: flex;
+}
+.footer-terms p a{
+    margin-right: 40px;
+    color: #fff;
+    text-decoration: underline;
+}

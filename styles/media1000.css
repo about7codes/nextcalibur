@@ -1,0 +1,174 @@
+
+/* Changes upon hitting 1025px screen size  */
+
+@media only screen and (max-width: 768px) {
+
+    /* Nav & Header Section styles below  */
+
+    header nav{
+        display: block;
+    }
+    nav label{
+        display: block;
+        text-align: right;
+    }
+    
+    /* nav .navlink{
+        display: block;
+    } */
+    nav .logo{
+        height: 25px;
+        position: absolute;
+    }
+    .navlink{
+        display: none;
+        width: 100%;
+        text-align: center;
+        /* padding-left: 0; */
+        height: 100vh;
+        background-color: #0B1E2A;
+    }
+    #toggle:checked + .navlink {
+        display: block;
+    }
+
+    header nav{
+        padding-top: 15px;
+        
+    }
+
+    .navlink li{
+        padding: 10px 15px;
+    }
+    .navbar .intro{
+        /* align-items: right; */
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .intro h1{
+        margin-top: 0;
+        font-size: 21px;
+        text-align: center;
+    }
+    .intro p{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .intro-pic{
+        height: 150px;
+    }
+
+    /* About Section styles below  */
+    .about-container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .about-content{
+        padding-right: 0;
+    }
+
+    .about-img{
+        display: none;
+    }
+    .about-content p{
+        width: 100%;
+        max-width: 100%;
+        font-size: 14px;
+    }
+    .about-content h1{
+        margin: 0;
+    }
+
+    /* Services Section styles below  */
+    .services-container{
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .services-img{
+        display: none;
+    }
+    .services-content {
+        margin-right: 0;
+    }
+    
+    .services-content p{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* Solutions Section styles below  */
+    .solutions-section{
+        padding-top: 20px;
+    }
+    .solutions-container{
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .solutions-img{
+        display: none;
+    }
+    .solutions-content p{
+        max-width: 100%;
+        font-size: 14px;
+    }
+    .solutions-content h1{
+        margin: 0;
+    }
+
+    /* Careers Section styles below  */
+    .careers-container{
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .careers-img{
+        display: none;
+    }
+    .careers-content {
+        margin-right: 0;
+    }
+    
+    .careers-content p{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* Contact Section styles below  */
+
+    .contact-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .contact-a{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-a .logo{
+        height: 25px;
+    }
+    .contact-a h1{
+        font-size: 16px;
+    }
+    .contact-b{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact-c{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    /* Footer Section styles below  */
+    footer .footer-container{
+        width: 100%;
+        flex-direction: column;
+        font-size: 10px;
+        padding: 10px;
+    }
+    
+}

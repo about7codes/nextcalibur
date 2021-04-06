@@ -1,0 +1,100 @@
+
+/* Changes upon hitting 1300px screen size  */
+
+@media only screen and (max-width: 1000px) {
+
+    /* header styles below   */
+
+    header nav{
+        width: 100%;
+    }
+    .navlink li a{
+        font-size: 14px;
+    }
+    .intro{
+        width: 90%;
+    }
+    .intro h1{
+        font-size: 40px;
+    }
+    .intro p{
+        font-size: 20px;
+    }
+    .intro-pic{
+        height: 390px;
+    }
+
+    /* About Section styles below  */
+
+    .about-container{
+        width: 100%;
+    }
+    .about-img{
+        height: 350px;
+        position: relative;
+        bottom: -70px;
+        left: 0;
+    }
+
+    /* Services Section styles below  */
+    .services-section{
+        overflow: hidden;
+    }
+    .services-container{
+        width: 100%;
+    }
+    .services-img{
+        height: 350px;
+        bottom: -20px;
+        right: -120px;
+    }
+
+    /* Solutions Section styles below  */
+    .solutions-container{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /* Careers Section styles below  */
+    .careers-section{
+        overflow: hidden;
+    }
+    .careers-container{
+        width: 1000px;
+    }
+    .careers-img{
+        height: 170px;
+        right: -50px;
+    }
+    .careers-content{
+        margin-right: 60px;
+    }
+
+    /* Contact Section styles below  */
+    .contact-container{
+        width: 100%;
+    }
+
+    .contact-b{
+        width: 280px;
+    }
+    .contact-b{
+        margin-left: 40px;
+    }
+
+    .contact-c{
+        max-width: 100%;
+
+    }
+
+    /* Footer Section styles below  */
+    footer .footer-container{
+        width: 100%;
+    }
+    footer .footer-container{
+        width: 100%;
+        flex-direction: column;
+        font-size: 10px;
+        padding: 10px;
+    }
+}

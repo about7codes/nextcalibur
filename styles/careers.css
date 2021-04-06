@@ -1,0 +1,362 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: myFont, sans-serif;
+}
+
+@font-face {
+    font-family: 'myFont';
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+  }
+
+a{
+    text-decoration: none;
+    
+}
+p{
+    font-size: 14px;
+}
+
+.navlink .active{
+    color: #57A6DC;
+}
+
+.btn-c{
+    background-color: #858585;
+    color: #fff;
+    border: 2px solid #fff;
+    font-family: myFont, sans-serif;
+    border-radius: 3px;
+    padding: 5px 45px;
+    transition: .3s ease-in-out;
+}
+
+.btn-c:hover{
+    background-color: #fff;
+    color: #858585; 
+}
+
+
+/* Nav & intro styles below  ***********************/
+
+header{
+    background-color: #0D283A;
+    width: 100%;
+    overflow: hidden;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.navlink{
+    display: flex;
+    list-style: none;
+    color: #fff;
+}
+
+/* Vid...************************************** */
+
+nav label {
+    cursor: pointer;
+    color: #fff;
+    margin: 0 20px 0 0;
+    font-size: 26px;
+    line-height: 25px;
+    display: none;
+  }
+
+  #toggle{
+      display: none;
+  }
+
+  /* Vid...************************************** */
+
+.navlink li a{
+    white-space: nowrap;
+    padding-right: 15px;
+    color: #fff;
+}
+
+nav .logo{
+    height: 50px;
+    padding-left: 15px;
+}
+
+.intro{
+    background-color: #0B2637;
+    position: relative;
+    height: 360px;
+    width: 100%;
+}
+
+.intro img{
+    /* text-align: center; */
+    display: block;
+    height: 360px;
+    min-width: 100%;
+    /* z-index: -2; */
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.intro h1{
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Careers Section styles below  */
+
+.careers-section{
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+.careers-container{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+}
+
+.careers-img{
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-70%, 0%);
+}
+
+.careers-content{
+    margin-bottom: 50px;
+}
+
+.careers-content h1{
+    font-size: 40px;
+    margin: 0;
+}
+
+.careers-content p{
+    line-height: 1.5;
+    text-align: justify;
+    width: 500px;
+    margin-bottom: 30px;
+}
+.careers-content p a{
+    color: #000;
+    transition: .5s ease-in-out;
+}
+
+.careers-content p a:hover{
+    color: grey;
+}
+
+/* Contact Section styles below  */
+
+.contact-section{
+    color: #fff;
+    font-family: myFont, sans-serif;
+    background-color: #323435;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.contact-container{
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.contact-a .logo{
+    height: 50px;
+}
+
+.contact-a{
+    /* width: 400px; */
+    text-align: right;
+    align-self: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    font-family: myFont, sans-serif;
+    padding: 6px ;
+    margin-top: 10px;
+    border-radius: 2px;
+    background-color: #858585;
+    border: 0;
+    color: #fff;
+}
+
+.contact-form textarea{
+    resize: none;
+    margin-bottom: 20px !important;
+}
+
+.contact-c{
+    width: 270px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.contact-info a{
+    color: #fff;
+}
+
+.contact-info p, .contact-location p{
+    margin: 0;
+}
+
+.contact-info{
+    margin-bottom: 16px;
+}
+
+/* Footer Section styles below  */
+
+footer{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: myFont, sans-serif;
+    background-color: #222A2E;
+    color: #fff;
+}
+
+footer .footer-container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-terms{
+    display: flex;
+}
+.footer-terms p a{
+    margin-right: 40px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1000px) {
+    header nav{
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+
+    nav label{
+        display: block;
+        text-align: right;
+    }
+
+    nav .logo{
+        height: 25px;
+        position: absolute;
+    }
+
+    nav .navlink{
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+        height: 100vh;
+    }
+
+    .navlink li{
+        padding: 10px 15px;
+    }
+
+    #toggle:checked + .navlink {
+        display: block;
+        transition: all .2s ease-in-out ;
+    }
+
+    .intro h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .intro, .intro img{
+        height: 160px;
+        
+    }
+
+    /* Careers Section styles below  */
+
+    .careers-container{
+        width: 100%;
+    }
+    .careers-img-container{
+        display: none;
+    }
+    .careers-content{
+        padding: 10px;
+    }
+
+    .careers-content, .careers-content p{
+        width: 100%;
+    }
+    .careers-content h1{
+        font-size: 34px;
+    }
+
+    /* Contact Section styles below  */
+    .contact-section{
+        padding-top: 20px;
+    }
+    .contact-container{
+        width: 100%;
+        flex-direction: column; 
+    }
+    .contact-a{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-a .logo{
+        height: 25px;
+    }
+    .contact-a h1{
+        font-size: 16px;
+    }
+    .contact-b{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact-c{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    /* Footer Section styles below  */
+    footer .footer-container{
+        width: 100%;
+        flex-direction: column;
+        font-size: 10px;
+        padding: 10px;
+    }
+  }
